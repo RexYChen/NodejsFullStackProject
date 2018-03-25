@@ -1,0 +1,27 @@
+<form class="form" action="/todo" method="post">
+  <div class ="form-group">
+    <label for="title">Title</label> <br/>
+    <input type="text" calss="form-control" name="title" id="title" placeholder="Enrter title">
+  </div>
+
+  <div class ="form-group">
+    <label for="priority">Priority</label> <br/>
+    <select class="form-control" id="priority" name="priority">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div class ="form-group">
+    <label for="done">Done</label> <br/>
+    <input type="radio" name="done" value="true"/> True
+    <input type="radio" name="done" value="false" />  False<br />
+  </div>
+
+  <button type="submit" name="create" class="btn btn-success">
+    Create
+  </button>
+</form>
